@@ -52,7 +52,7 @@ header h1 {
 }
 .event.has-detail p {
   text-decoration: underline;
-  text-decoration-color: #ff99bb; /* 春菜さんらしいピンクのアクセント */
+  text-decoration-color: #000000; /* 春菜さんらしいピンクのアクセント */
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
