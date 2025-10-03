@@ -42,6 +42,14 @@ header h1 {
   background: #ffe4ec;
 }
 
+/* 時間と項目の表示（.event の中の <p>） */
+.event p {
+  font-size: 1.3em;       /* 大きめの文字サイズ */
+  font-weight: bold;      /* 太字で見やすく */
+  margin: 0;              /* 余計な余白をなくす */
+  padding: 0.5em 0;       /* 上下に少し余白を追加 */
+  color: #c94f7c;         /* 春菜さんらしいアクセントカラー */
+}
 .detail {
   max-height: 0;
   overflow: hidden;
