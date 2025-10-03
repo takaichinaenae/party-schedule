@@ -1,0 +1,60 @@
+body {
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background: #fff8f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #ffccdd;
+  text-align: center;
+  padding: 2em 1em;
+  border-bottom: 4px solid #ff99bb;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+main {
+  padding: 2em;
+}
+
+.schedule h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  color: #c94f7c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 1em;
+  text-align: center;
+}
+
+th {
+  background: #ffe4ec;
+  color: #c94f7c;
+}
+
+tr:nth-child(even) {
+  background: #fdf5f9;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #ffccdd;
+  color: #555;
+  font-size: 0.9em;
+  border-top: 2px solid #ff99bb;
+}
