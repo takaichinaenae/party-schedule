@@ -4,37 +4,90 @@
   <meta charset="UTF-8">
   <title>追いコンタイムスケジュール</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>代替え</h1>
-    
+    <h1>🎉 2025年10月1日 追いコンタイムスケジュール 🎉</h1>
   </header>
 
   <main>
     <section class="schedule">
-      <table>
-        <thead>
-          <tr>
-            <th>時間</th>
-            <th>内容</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>18:10</td><td>1,2,4年 現金回収</td></tr>
-          <tr><td>18:20</td><td>3年 現金回収</td></tr>
-          <tr><td colspan="2">※金額揃ってるか確認：4500 × 47 = 211,500円</td></tr>
-          <tr><td>18:30</td><td>注意事項説明・スタート</td></tr>
-          <tr><td>18:50</td><td>4年生催し（サプライズなので口外厳禁）</td></tr>
-          <tr><td>19:30</td><td>プレゼント授与＆ケーキ準備</td></tr>
-          <tr><td>19:45？</td><td>プレゼント授与終わり次第 → ケーキ（フォーク？皿？）</td></tr>
-          <tr><td colspan="2">🎂 プレゼントとケーキ含めて全体写真撮影 📸</td></tr>
-          <tr><td>20:15</td><td>まいまい動画（16分）</td></tr>
-          <tr><td>20:40</td><td>3年生からのコメント</td></tr>
-          <tr><td>21:30</td><td>飲み放終了</td></tr>
-          <tr><td>21:50</td><td>1・3・4年撤退＆中原支払い</td></tr>
-        </tbody>
-      </table>
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>18:10</strong> - 1,2,4年現金回収</p>
+      </div>
+
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>18:20</strong> - 3年現金回収</p>
+      </div>
+
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>※金額確認</strong></p>
+        <div class="detail">4500 × 47 = 211,500円</div>
+      </div>
+
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>18:25</strong> - 注意事項等説明</p>
+        <div class="detail">21:30L.Oで22:00完全撤退となっています。ですが1分でも過ぎると全員分延長料金かかってしまうので21:50には退店し始めてください。退店した後お店を出たところで溜まってしまうと迷惑になるので、退店した人からとりあえず駅の方に向かって歩いてください。席は固定じゃないので自由に移動してもらって構いません！</div>
+      </div>
+
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>18:30</strong> - 開会宣言</p>
+        <div class="detail">本日はお集まりいただきありがとうございます！それでは只今よりべるぶりーず代替えコンパを開催します！本日司会進行を務めます、2年中原春菜です！よろしくお願いします！それでは早速乾杯の挨拶を、、、、ひびきさんお願いしたいと思います、みなさんグラスの用意をお願いします！</div>
+      </div>
+
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>18:30</strong> - 乾杯（ひびき）</p>
+        <div class="detail">それではみなさんしばらくの間ゆっくりと呑んで食べてお楽しみください</div>
+      </div>
+
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>18:50</strong> - 4年生催し</p>
+        <div class="detail">皆様食事やおしゃべりを楽しんでいますでしょうか？ここで四年生による出し物です！みなさんステージが見える場所にお集まりください！それでは四年生の皆さんよろしくお願いします！</div>
+      </div>
+
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>19:00</strong> - 催し終了</p>
+        <div class="detail">4年生の皆さんありがとうございました！四年生にもう一度大きな拍手をお願いします！それでは今しばらく食事、お話をお楽しみください</div>
+      </div>
+
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>19:30</strong> - プレゼント授与2人 & ケーキ準備（さなみ）</p>
+        <div class="detail">みなさんいい感じに酔ってきた頃でしょうか笑笑 それではここで後輩から先輩にプレゼントを贈りたいと思います♪ かな、ゆうお願いします</div>
+      </div>
+
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>19:45？</strong> - プレゼント授与終わり次第ケーキ</p>
+        <div class="detail">はい、タオルいっぱい使ってくださいね！続いてこちらさなみによる手作りケーキです！お家で作ってきてくれました♪ たくさん揃ったところで、全体写真を撮りたいと思います。3年生はプレゼント手に持って集合してください！</div>
+      </div>
+
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>📸</strong> - プレゼントとケーキ含めて全体写真撮影</p>
+        <div class="detail">その後、ケーキを切り分けて各テーブルへ</div>
+      </div>
+
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>20:15</strong> - まいまい動画（16分）</p>
+        <div class="detail">みなさん、だんだん終わりが近づいてきましたがここで動画を見て思い出を振り返って頂けたらと思います♪ 画面の見える場所に移動ください♪ ちょっと素材が豊富で20分とかなり長尺になってしまったんですけど、ぜひ最後まで楽しんでください</div>
+      </div>
+
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>20:40</strong> - 3年生からのコメント</p>
+        <div class="detail">素敵な動画ありがとうございました😊 最後に3年生から一言ずついいですか？お願いします🙇‍♀️<br>ありがとうございました♪ 飲み物の方は21:30までとなっていますので、時間までお楽しみください</div>
+      </div>
+
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>21:30</strong> - 飲み放終了</p>
+      </div>
+
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>21:45</strong> - 締めの挨拶</p>
+        <div class="detail">みなさん楽しんでいただけましたか？まもなく退店時間となりますので代替えコンパここでお開きにします！本日はお集まりいただき本当にありがとうございました！</div>
+      </div>
+
+      <div class="event" onclick="toggleDetail(this)">
+        <p><strong>21:50</strong> - 1・3・4年撤退 & 中原支払い</p>
+      </div>
     </section>
   </main>
 
