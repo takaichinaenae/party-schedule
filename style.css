@@ -43,22 +43,25 @@ header h1 {
 }
 
 .detail {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
   margin-top: 0.5em;
-  padding: 0.8em;
+  padding: 0 0.8em;
   background: #fff0f5;
   border-left: 4px solid #ff99bb;
   border-radius: 4px;
   font-size: 1em;
-  transition: all 0.3s ease;
 }
 
-/* タップされたときだけ表示＆文字サイズアップ */
+/* 表示されたときだけ文字サイズアップ＋展開 */
 .detail.active {
-  display: block;
+  max-height: 1000px; /* 十分大きな値にしておく */
+  opacity: 1;
+  padding: 0.8em;
   font-size: 1.2em;
 }
-
 /* フッター */
 footer {
   text-align: center;
