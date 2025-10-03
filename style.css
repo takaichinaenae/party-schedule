@@ -1,11 +1,15 @@
+/* 全体の基本設定 */
 body {
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
   background: #fff8f0;
   color: #333;
   margin: 0;
   padding: 0;
+  font-size: 18px; /* 基本文字サイズを大きめに */
+  line-height: 1.6;
 }
 
+/* ヘッダー */
 header {
   background: #ffccdd;
   text-align: center;
@@ -13,10 +17,17 @@ header {
   border-bottom: 4px solid #ff99bb;
 }
 
-.schedule {
-  padding: 2em;
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
 }
 
+/* スケジュールセクション */
+.schedule {
+  padding: 1.5em;
+}
+
+/* イベントブロック */
 .event {
   background: #fff;
   margin-bottom: 1em;
@@ -31,6 +42,7 @@ header {
   background: #ffe4ec;
 }
 
+/* 詳細表示部分 */
 .detail {
   display: none;
   margin-top: 0.5em;
@@ -38,5 +50,30 @@ header {
   background: #fff0f5;
   border-left: 4px solid #ff99bb;
   border-radius: 4px;
-  font-size: 0.95em;
+  font-size: 1em;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #ffccdd;
+  color: #555;
+  font-size: 0.9em;
+  border-top: 2px solid #ff99bb;
+}
+
+/* スマホ向けのレスポンシブ対応 */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 20px;
+  }
+
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  .detail {
+    font-size: 1.05em;
+  }
 }
