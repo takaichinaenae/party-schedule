@@ -146,5 +146,16 @@
   <footer>
     <p>© 2025 サークル○○ 追いコン実行委員会</p>
   </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const events = document.querySelectorAll(".event");
+    events.forEach(event => {
+      const detail = event.querySelector(".detail");
+      if (detail && detail.textContent.trim() !== "") {
+        event.classList.add("has-detail");
+      }
+    });
+  });
+</script>
 </body>
 </html>
