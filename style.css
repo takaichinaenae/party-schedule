@@ -15,17 +15,11 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 main {
   padding: 2em;
-}
-
-.schedule h2 {
-  font-size: 1.5em;
-  margin-bottom: 1em;
-  color: #c94f7c;
 }
 
 table {
@@ -48,6 +42,12 @@ th {
 
 tr:nth-child(even) {
   background: #fdf5f9;
+}
+
+tr td[colspan="2"] {
+  background: #fff0f5;
+  font-weight: bold;
+  color: #c94f7c;
 }
 
 footer {
