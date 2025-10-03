@@ -60,16 +60,14 @@ header h1 {
   background: #fff0f5;
   border-left: 4px solid #ff99bb;
   border-radius: 4px;
-  font-size: 1em;
-}
-
-/* 表示されたときだけ文字サイズアップ＋展開 */
-.detail.active {
-  max-height: 1000px; /* 十分大きな値にしておく */
-  opacity: 1;
-  padding: 0.8em;
   font-size: 1.2em;
 }
+
+/* 表示されたときだけ表示切り替え（サイズは変えない） */
+.detail.active {
+  display: block;
+}
+
 /* フッター */
 footer {
   text-align: center;
