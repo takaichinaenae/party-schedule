@@ -63,6 +63,8 @@ header h1 {
   font-size: 1.2em;
 }
 
+}
+
 .detail.active {
   display: block;
   max-height: 1000px; /* ← 高さを指定して展開 */
