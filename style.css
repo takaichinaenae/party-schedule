@@ -42,7 +42,6 @@ header h1 {
   background: #ffe4ec;
 }
 
-/* 詳細表示部分 */
 .detail {
   display: none;
   margin-top: 0.5em;
@@ -51,6 +50,13 @@ header h1 {
   border-left: 4px solid #ff99bb;
   border-radius: 4px;
   font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+/* タップされたときだけ表示＆文字サイズアップ */
+.detail.active {
+  display: block;
+  font-size: 1.2em;
 }
 
 /* フッター */
