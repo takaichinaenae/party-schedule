@@ -184,6 +184,7 @@ h1 {
   padding: 16px;
   box-sizing: border-box;
   background-color: #fff0f5;
+  padding-bottom: 0px;
 }
 
 /* 各学年のボックス */
