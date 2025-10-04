@@ -246,7 +246,7 @@ input[type="checkbox"] {
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-top: 40px; /* ← ここに統合 */
+  margin-top: 4px; /* ← ここに統合 */
 }
 
 #reset-button:hover {
@@ -271,7 +271,4 @@ input[type="checkbox"] {
 .button-wrapper {
   text-align: center;
   margin-bottom: 0px; /* ← 余白をなくす */
-}
-#reset-button {
-  margin-top: 4px; /* ← ここで調整 */
 }
