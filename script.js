@@ -48,3 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+document.getElementById('reset-button').addEventListener('click', () => {
+  const allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+  allCheckboxes.forEach(cb => cb.checked = false);
+  localStorage.clear(); // 保存されたチェック状態もリセット
+  updateTotals(); // 金額も更新
+});
