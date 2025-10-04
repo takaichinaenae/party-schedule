@@ -61,11 +61,12 @@ document.getElementById("reset-button").addEventListener("click", function () {
     const checkboxes = document.querySelectorAll("input[type='checkbox']");
     checkboxes.forEach(cb => cb.checked = false);
 
-    // 小計・合計の表示をリセット（必要に応じて）
-    document.getElementById("subtotal-1").textContent = "小計：0円";
-    document.getElementById("subtotal-2").textContent = "小計：0円";
-    document.getElementById("subtotal-3").textContent = "小計：0円";
-    document.getElementById("subtotal-4").textContent = "小計：0円";
+    // 小計・合計・残り金額の表示をリセット
+    document.getElementById("subtotal-1").textContent = "計：0円";
+    document.getElementById("subtotal-2").textContent = "計：0円";
+    document.getElementById("subtotal-3").textContent = "計：0円";
+    document.getElementById("subtotal-4").textContent = "計：0円";
     document.getElementById("total").textContent = "合計：0円";
+    document.getElementById("remaining").textContent = "あと：164,500円"; 
   }
 });
