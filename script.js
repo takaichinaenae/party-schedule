@@ -38,7 +38,7 @@ function updateTotals() {
   document.getElementById('total').textContent = `合計：${total.toLocaleString()}円`;
 
   const remaining = Math.max(goal - total, 0); // マイナスにならないように
-  document.getElementById('remaining').textContent = `あと：${remaining.toLocaleString()}円`;
+  document.getElementById('remaining').textContent = `残り：${remaining.toLocaleString()}円`;
 }
 
 
