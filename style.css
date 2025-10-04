@@ -222,12 +222,12 @@ input[type="checkbox"] {
 .subtotal {
   font-weight: bold;
   margin-top: 12px;
-  font-size: 16px;
+  font-size: 32px;
   text-align: left;
 }
 
 #total {
-  font-size: 20px;
+  font-size: 32px;
   font-weight: bold;
   text-align: center;
   margin: 32px 0;
