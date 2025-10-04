@@ -185,6 +185,7 @@ h1 {
   box-sizing: border-box;
   background-color: #fff0f5;
   padding-bottom: 0px;
+  margin-top: -19px; /* ← 0.5cm分上に引き上げる */
 }
 
 /* 各学年のボックス */
