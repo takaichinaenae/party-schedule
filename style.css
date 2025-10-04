@@ -267,8 +267,8 @@ input[type="checkbox"] {
   margin: 8px 0;
   text-align: center;
 }
-
-.button-wrapper {
+.button-area {
   text-align: center;
   margin-bottom: 0px; /* ← 余白をなくす */
 }
+
