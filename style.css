@@ -259,11 +259,10 @@ input[type="checkbox"] {
 .summary {
   width: 100%;
   text-align: center;
-  margin-top: -24px; /* ← ここで引き上げる */
+  margin-top: -48px; /* ← さらに強く引き上げる */
   position: relative;
-  top: -12px;         /* ← さらに微調整 */
+  top: -24px;         /* ← 位置も上にずらす */
 }
-
 #remaining {
   font-size: 28px;
   font-weight: bold;
