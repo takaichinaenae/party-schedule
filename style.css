@@ -233,7 +233,7 @@ input[type="checkbox"] {
   font-size: 32px;
   font-weight: bold;
   text-align: center;
-  margin: 32px 0;
+  margin: 16px 0;
   color: #d45d79;
 }
 #reset-button {
@@ -258,17 +258,17 @@ input[type="checkbox"] {
 .summary {
   width: 100%;
   text-align: center;
-  margin-top: 8px;
+  margin-top: 0px;
 }
 
 #remaining {
   font-size: 28px;
   font-weight: bold;
   color: #d45d79;
-  margin: 12px 0;
+  margin: 8px 0;
   text-align: center;
 }
 
 #reset-button {
-  margin-top: 12px;
+  margin-top: 4px;
 }
