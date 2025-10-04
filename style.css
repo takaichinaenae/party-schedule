@@ -135,9 +135,9 @@ footer a:hover {
 
 .hero-buttons {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  flex-direction: column; /* ← これで縦並びに！ */
+  align-items: center;     /* ← 中央揃え（任意） */
+  gap: 20px;               /* ← ボタン間の余白 */
 }
 
 .hero-button {
