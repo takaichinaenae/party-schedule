@@ -110,3 +110,46 @@ footer a:hover {
     font-size: 1.05em;
   }
 }
+/* ここまでが既存のスタイル */
+
+/* === ヒーロー画面のスタイル === */
+.hero {
+  background: linear-gradient(to bottom right, #ffe4e1, #fff0f5);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #d45d79;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-button {
+  padding: 14px 28px;
+  background-color: #ff8fa3;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #ff6f91;
+  transform: scale(1.05);
+}
