@@ -31,7 +31,7 @@ function updateTotals() {
     const checkboxes = document.querySelectorAll(`.grade-${year}`);
     const count = Array.from(checkboxes).filter(cb => cb.checked).length;
     const subtotal = count * fee;
-    document.getElementById(`subtotal-${year}`).textContent = `小計：${subtotal.toLocaleString()}円`;
+    document.getElementById(`subtotal-${year}`).textContent = `計：${subtotal.toLocaleString()}円`;
     total += subtotal;
   });
 
