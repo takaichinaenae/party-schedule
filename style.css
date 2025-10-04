@@ -141,7 +141,9 @@ footer a:hover {
 }
 
 .hero-button {
-  padding: 14px 28px;
+  width: 200px; /* ← 幅を固定 */
+  text-align: center; /* ← テキストを中央揃え */
+  padding: 14px 0;     /* ← 横のパディングをなくす */
   background-color: #ff8fa3;
   color: white;
   text-decoration: none;
