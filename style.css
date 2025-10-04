@@ -158,32 +158,40 @@ footer a:hover {
 body {
   font-family: sans-serif;
   background-color: #fffaf5;
-  padding: 16px;
   margin: 0;
+  padding: 0;
   color: #333;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 24px;
+  margin: 24px 0;
   font-size: 24px;
   color: #d45d79;
 }
 
+/* 全体を一つの枠で囲む */
 .roster {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center;
+  flex-direction: row;
+  overflow-x: auto; /* 横スクロール対応 */
+  border: 2px solid #ffd6e0;
+  border-radius: 12px;
+  margin: 0;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #fff;
 }
 
+/* 各学年のボックス */
 .grade {
-  background-color: #fff;
-  border: 1px solid #ffd6e0;
-  border-radius: 8px;
-  padding: 16px;
+  flex: 0 0 auto;
   width: 220px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-right: 16px;
+}
+
+.grade:last-child {
+  margin-right: 0;
 }
 
 .grade h2 {
@@ -200,8 +208,8 @@ h1 {
 }
 
 .grade li {
-  margin: 6px 0;
-  font-size: 32px;
+  margin: 8px 0;
+  font-size: 18px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -214,14 +222,17 @@ input[type="checkbox"] {
 .subtotal {
   font-weight: bold;
   margin-top: 12px;
-  font-size: 32px;
+  font-size: 16px;
   text-align: right;
 }
 
 #total {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
+  margin: 32px 0;
+  color: #d45d79;
+}
   margin-top: 40px;
   color: #d45d79;
 }
