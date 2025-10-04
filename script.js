@@ -54,9 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-document.getElementById('reset-button').addEventListener('click', () => {
-  const allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
-  allCheckboxes.forEach(cb => cb.checked = false);
-  localStorage.clear(); // 保存されたチェック状態もリセット
-  updateTotals(); // 金額も更新
+document.getElementById("reset-button").addEventListener("click", function () {
+  const confirmReset = confirm("本当にリセットしますか？");
+  if (confirmReset) {
+    // すべてのチェックを外す処理
+    const checkboxes = document.querySelectorAll("input[type='checkbox']");
+    checkboxes.forEach(cb => cb.checked = false);
+
+    // 小計・合計の表示をリセット（必要に応じて）
+    document.getElementById("subtotal-1").textContent = "小計：0円";
+    document.getElementById("subtotal-2").textContent = "小計：0円";
+    document.getElementById("subtotal-3").textContent = "小計：0円";
+    document.getElementById("subtotal-4").textContent = "小計：0円";
+    document.getElementById("total").textContent = "合計：0円";
+  }
 });
