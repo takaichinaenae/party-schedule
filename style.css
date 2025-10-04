@@ -153,3 +153,45 @@ footer a:hover {
   background-color: #ff6f91;
   transform: scale(1.05);
 }
+
+
+.roster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.grade {
+  background-color: #ffe4e1;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+}
+
+.grade h2 {
+  text-align: center;
+  color: #d45d79;
+}
+
+.grade ul {
+  list-style: none;
+  padding: 0;
+}
+
+.grade li {
+  margin: 8px 0;
+}
+
+.subtotal {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#total {
+  margin-top: 30px;
+  font-size: 24px;
+  text-align: center;
+  color: #d45d79;
+}
