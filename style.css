@@ -261,9 +261,9 @@ input[type="checkbox"] {
 .summary {
   width: 100%;
   text-align: center;
-  margin-top: -158px; 
+  margin-top: -196px; 
   position: relative;
-  top: -110px;        
+  top: -148px;         
 }
 #remaining {
   font-size: 28px;
