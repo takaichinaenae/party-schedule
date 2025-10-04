@@ -6,6 +6,24 @@ function toggleDetail(element) {
 }
 const fee = 3500;
 
+// チェック状態を保存
+function saveCheckboxState() {
+  const allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+  allCheckboxes.forEach((cb, index) => {
+    localStorage.setItem(`checkbox-${index}`, cb.checked);
+  });
+}
+
+// チェック状態を復元
+function restoreCheckboxState() {
+  const allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+  allCheckboxes.forEach((cb, index) => {
+    const saved = localStorage.getItem(`checkbox-${index}`);
+    cb.checked = saved === "true";
+  });
+}
+
+// 合計・小計を更新
 function updateTotals() {
   let total = 0;
   [4, 3, 2, 1].forEach(year => {
@@ -18,6 +36,15 @@ function updateTotals() {
   document.getElementById('total').textContent = `合計：${total.toLocaleString()}円`;
 }
 
-document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
-  cb.addEventListener('change', updateTotals);
+// 初期化
+document.addEventListener('DOMContentLoaded', () => {
+  restoreCheckboxState();
+  updateTotals();
+
+  document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+    cb.addEventListener('change', () => {
+      saveCheckboxState();
+      updateTotals();
+    });
+  });
 });
