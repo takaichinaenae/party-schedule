@@ -223,7 +223,7 @@ input[type="checkbox"] {
   font-weight: bold;
   margin-top: 12px;
   font-size: 16px;
-  text-align: right;
+  text-align: left;
 }
 
 #total {
