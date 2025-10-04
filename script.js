@@ -5,6 +5,7 @@ function toggleDetail(element) {
   }
 }
 const fee = 3500;
+const goal = 164500;
 
 // チェック状態を保存
 function saveCheckboxState() {
@@ -33,8 +34,13 @@ function updateTotals() {
     document.getElementById(`subtotal-${year}`).textContent = `小計：${subtotal.toLocaleString()}円`;
     total += subtotal;
   });
+
   document.getElementById('total').textContent = `合計：${total.toLocaleString()}円`;
+
+  const remaining = Math.max(goal - total, 0); // マイナスにならないように
+  document.getElementById('remaining').textContent = `あと：${remaining.toLocaleString()}円`;
 }
+
 
 // 初期化
 document.addEventListener('DOMContentLoaded', () => {
