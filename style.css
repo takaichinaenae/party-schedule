@@ -156,49 +156,72 @@ footer a:hover {
 
 
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: sans-serif;
   background-color: #fffaf5;
-  padding: 20px;
+  padding: 16px;
+  margin: 0;
   color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #d45d79;
 }
 
 .roster {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 24px;
   justify-content: center;
 }
 
 .grade {
-  background-color: #ffe4e1;
-  padding: 20px;
-  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #ffd6e0;
+  border-radius: 8px;
+  padding: 16px;
   width: 220px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .grade h2 {
-  text-align: center;
+  font-size: 20px;
+  margin-bottom: 12px;
   color: #d45d79;
+  text-align: center;
 }
 
 .grade ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .grade li {
-  margin: 8px 0;
+  margin: 6px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
 }
 
 .subtotal {
-  margin-top: 10px;
   font-weight: bold;
-  text-align: center;
+  margin-top: 12px;
+  font-size: 16px;
+  text-align: right;
 }
 
 #total {
-  margin-top: 30px;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
+  margin-top: 40px;
   color: #d45d79;
 }
