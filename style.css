@@ -246,6 +246,7 @@ input[type="checkbox"] {
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 40px; /* ← ここに統合 */
 }
 
 #reset-button:hover {
