@@ -1,15 +1,15 @@
-/* 全体の基本設定 */
+
 body {
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
   background: #fff8f0;
   color: #333;
   margin: 0;
   padding: 0;
-  font-size: 18px; /* 基本文字サイズを大きめに */
+  font-size: 18px; 
   line-height: 1.6;
 }
 
-/* ヘッダー */
+
 header {
   background: #ffccdd;
   text-align: center;
@@ -27,7 +27,7 @@ header h1 {
   padding: 1.5em;
 }
 
-/* イベントブロック */
+
 .event {
   background: #fff;
   margin-bottom: 1em;
@@ -42,17 +42,17 @@ header h1 {
   background: #ffe4ec;
 }
 
-/* 時間と項目の表示（.event の中の <p>） */
+
 .event p {
-  font-size: 1.3em;       /* 大きめの文字サイズ */
-  font-weight: bold;      /* 太字で見やすく */
-  margin: 0;              /* 余計な余白をなくす */
-  padding: 0.5em 0;       /* 上下に少し余白を追加 */
-  color: #000000;         /* 春菜さんらしいアクセントカラー */
+  font-size: 1.3em;       
+  font-weight: bold;      
+  margin: 0;              /
+  padding: 0.5em 0;      
+  color: #000000;         
 }
 .event.has-detail p {
   text-decoration: underline;
-  text-decoration-color: #000000; /* 春菜さんらしいピンクのアクセント */
+  text-decoration-color: #000000; 
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
@@ -72,9 +72,9 @@ header h1 {
 
 .detail.active {
   display: block;
-  max-height: 1000px; /* ← 高さを指定して展開 */
-  opacity: 1;         /* ← 透明度を戻す */
-  padding: 0.8em;     /* ← 非表示時に消えていた余白を復活 */
+  max-height: 1000px; 
+  opacity: 1;        
+  padding: 0.8em;     
 }
 
 /* フッター */
@@ -110,15 +110,15 @@ footer a:hover {
     font-size: 1.05em;
   }
 }
-/* ここまでが既存のスタイル */
+
 
 /* === ヒーロー画面のスタイル === */
 .hero {
   background: linear-gradient(to bottom right, #ffe4e1, #fff0f5);
   padding: 80px 20px;
   text-align: center;
-  min-height: 100vh; /* ← 画面の高さに合わせて背景を広げる */
-  box-sizing: border-box; /* ← パディング込みで高さを計算 */
+  min-height: 100vh; 
+  box-sizing: border-box; 
 }
 
 .hero-content h1 {
@@ -135,15 +135,15 @@ footer a:hover {
 
 .hero-buttons {
   display: flex;
-  flex-direction: column; /* ← これで縦並びに！ */
-  align-items: center;     /* ← 中央揃え（任意） */
-  gap: 20px;               /* ← ボタン間の余白 */
+  flex-direction: column; 
+  align-items: center;     
+  gap: 20px;               
 }
 
 .hero-button {
-  width: 200px; /* ← 幅を固定 */
-  text-align: center; /* ← テキストを中央揃え */
-  padding: 14px 0;     /* ← 横のパディングをなくす */
+  width: 200px; 
+  text-align: center; 
+  padding: 14px 0;     
   background-color: #ff8fa3;
   color: white;
   text-decoration: none;
@@ -174,18 +174,18 @@ h1 {
   color: #d45d79;
 }
 
-/* 全体を一つの枠で囲む */
+
 .roster {
   display: flex;
   flex-direction: row;
-  overflow-x: auto; /* 横スクロール対応 */
+  overflow-x: auto; 
   border-radius: 12px;
   margin: 0;
   padding: 16px;
   box-sizing: border-box;
   background-color: #fff0f5;
   padding-bottom: 0px;
-  margin-top: -19px; /* ← 0.5cm分上に引き上げる */
+  margin-top: -19px; 
 }
 
 /* 各学年のボックス */
@@ -248,9 +248,9 @@ input[type="checkbox"] {
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-top: 8px;           /* ← 少しだけ余白を残す */
+  margin-top: 8px;           
   position: relative;
-  top: -12px;                /* ← 実際に上にずらす */
+  top: -12px;                
 }
 
 #reset-button:hover {
@@ -261,9 +261,9 @@ input[type="checkbox"] {
 .summary {
   width: 100%;
   text-align: center;
-  margin-top: -158px; /* -120px - 38px = 約1cm追加 */
+  margin-top: -158px; 
   position: relative;
-  top: -110px;         /* -72px - 38px = 約1cm追加 */
+  top: -110px;        
 }
 #remaining {
   font-size: 28px;
@@ -274,6 +274,6 @@ input[type="checkbox"] {
 }
 .button-area {
   text-align: center;
-  margin-bottom: 0px; /* ← 余白をなくす */
+  margin-bottom: 0px; 
 }
 
