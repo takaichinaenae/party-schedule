@@ -261,9 +261,9 @@ input[type="checkbox"] {
 .summary {
   width: 100%;
   text-align: center;
-  margin-top: -120px; /* ← 約2cm分引き上げる */
+  margin-top: -158px; /* -120px - 38px = 約1cm追加 */
   position: relative;
-  top: -72px;          /* ← さらに上にずらす */
+  top: -110px;         /* -72px - 38px = 約1cm追加 */
 }
 #remaining {
   font-size: 28px;
