@@ -57,16 +57,17 @@ document.addEventListener('DOMContentLoaded', () => {
 document.getElementById("reset-button").addEventListener("click", function () {
   const confirmReset = confirm("本当にリセットしますか？");
   if (confirmReset) {
-    
     const checkboxes = document.querySelectorAll("input[type='checkbox']");
-    checkboxes.forEach(cb => cb.checked = false);
+    checkboxes.forEach((cb, index) => {
+      cb.checked = false;
+      localStorage.removeItem(`checkbox-${index}`); // ← 保存された状態も削除！
+    });
 
-    
     document.getElementById("subtotal-1").textContent = "計：0円";
     document.getElementById("subtotal-2").textContent = "計：0円";
     document.getElementById("subtotal-3").textContent = "計：0円";
     document.getElementById("subtotal-4").textContent = "計：0円";
     document.getElementById("total").textContent = "合計：0円";
-    document.getElementById("remaining").textContent = "残り：164,500円"; 
+    document.getElementById("remaining").textContent = "残り：164,500円";
   }
 });
